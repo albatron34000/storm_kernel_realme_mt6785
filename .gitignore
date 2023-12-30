@@ -131,3 +131,4 @@ clang/
 gcc32/
 gcc64/
 out/
+AnyKernel/
