@@ -33,7 +33,7 @@ setup_kernel_release() {
     v=$(cat version)
     d=$(date "+%d%m%Y")
     z="storm-kernel-RM6785-$d-$v-ksu.zip"
-    wget --quiet https://psionicprjkt.my.id/assets/files/AK3-salaa.zip && unzip AK3-salaa
+    wget --quiet https://github.com/albatron34000/scripts/blob/main/AK3-salaa.zip && unzip AK3-salaa
     cp out/arch/arm64/boot/Image.gz-dtb AnyKernel && cd AnyKernel
     zip -r9 "$z" *
 }
