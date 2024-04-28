@@ -62,7 +62,7 @@ jobs:
           body: |
             Manifest: ${{ github.event.inputs.MANIFEST_BRANCH }}
             Device: ${{ github.event.inputs.DEVICE_NAME }}
-            Target: salaa_KernelSU
+            Target: RM6785_KernelSU
             Version:Android14
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
