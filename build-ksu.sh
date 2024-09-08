@@ -33,7 +33,8 @@ setup_kernel_release() {
     v=$(cat version)
     d=$(date "+%d%m%Y")
     z="storm-kernel-salaa-$d-$v-ksu.zip"
-    wget --quiet https://psionicprjkt.my.id/assets/files/AK3-salaa.zip && unzip AK3-salaa
+    rm -rf AnyKernel
+    git clone --depth=1 https://github.com/albatron34000/AnyKernel3_a15.git AnyKernel
     cp out/arch/arm64/boot/Image.gz-dtb AnyKernel && cd AnyKernel
     zip -r9 "$z" *
 }
